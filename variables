@@ -1,11 +1,11 @@
-#a=20
-#b=2.9
+a=20
+b=2.9
 #c='chinni'
 #d=2+3j
 #f=True
 
-#print(type(a))
-#print(type(b))
+print(type(a))
+print(type(b))
 #print(type(c))
 #print(type(d))
 #print(type(f))
