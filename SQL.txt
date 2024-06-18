@@ -1,0 +1,57 @@
+SELECT * FROM `employee` ;
+
+select *
+from employee
+where name='usha';
+
+#INSERT INTO `employee`(`NO`, `name`, `job`, `Hire date`) VALUES ('[106]','[krish]','[admin]','[2024-08-09]')
+SELECT *
+from employee;
+select *
+from employee
+WHERE job='clerk'
+
+
+CREATE TABLE fruits (
+   colour varchar(10),
+   name varchar(10),
+   price int(5),
+   exp_date date);
+
+INSERT INTO `fruits`(`colour`, `name`, `price`, `exp_date`) VALUES ('[orange]','[orange]','[50]','[2024-08-09]')
+INSERT INTO `fruits`(`colour`, `name`, `price`, `exp_date`) VALUES ('[pink]','[straw berry]','[90]','[2024-07-09]')
+INSERT INTO `fruits`(`colour`, `name`, `price`, `exp_date`) VALUES ('[peach]','[peach]','[89]','[2024-07-08]')
+INSERT INTO `fruits` (`colour`, `name`, `price`, `exp_date`) VALUES ('blue', 'berry', '90', '20243-06-28');
+
+
+SELECT *
+FROM fruits;
+
+SELECT *
+FROM `fruits`
+WHERE name='orange';
+
+UPDATE fruits
+SET exp_date = '2024-09-10'
+WHERE colour = 'orange';
+
+CREATE TABLE employee2 (
+    NO varchar(10),
+    name varchar(10),
+    job int(5),
+    hiredate date
+);
+
+INSERT INTO `employee2` (`NO`, `name`, `job`, `hiredate`) VALUES ('201', 'raghu', manager, '2024-04-08');
+
+INSERT INTO `employee2` (`NO`, `name`, `job`, `hiredate`) VALUES ('202', 'sita', clerk, '2024-04-09');
+
+INSERT INTO `employee2` (`NO`, `name`, `job`, `hiredate`) VALUES ('203', 'ram', team lead, '2024-02-06');
+
+INSERT INTO `employee2` (`NO`, `name`, `job`, `hiredate`) VALUES ('202', 'cherry', ceo, '2019-06-05');
+
+
+select *
+from employee;
+
+UPDATE `employee2` SET `NO`='[201]',`name`='[raghu]',`job`='[hr]',`hiredate`='[2024-08-04]' WHERE NO=201
