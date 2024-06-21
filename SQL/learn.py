@@ -1,34 +1,34 @@
 
 
 # #staff table
-import pymysql.cursors
+# import pymysql.cursors
 
 
-connection = pymysql.connect(
-    host='localhost',
-    user='root',
-    password='',
-    database='learning',
-    cursorclass=pymysql.cursors.DictCursor
-)
+# connection = pymysql.connect(
+#     host='localhost',
+#     user='root',
+#     password='',
+#     database='learning',
+#     cursorclass=pymysql.cursors.DictCursor
+# )
 
-try:
-    with connection.cursor() as cursor:
+# try:
+#     with connection.cursor() as cursor:
         
-        create_table_query = """
-        CREATE TABLE staff (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(50),
-            age INT,
-            grade VARCHAR(10)
-        )
-        """
+#         create_table_query = """
+#         CREATE TABLE staff (
+#             id INT AUTO_INCREMENT PRIMARY KEY,
+#             name VARCHAR(50),
+#             age INT,
+#             grade VARCHAR(10)
+#         )
+#         """
        
-        cursor.execute(create_table_query)
+#         cursor.execute(create_table_query)
    
-    connection.commit()
-finally:
-    connection.close()
+#     connection.commit()
+# finally:
+#     connection.close()
 
 
 
