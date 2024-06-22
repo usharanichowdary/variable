@@ -63,18 +63,18 @@ finally:
 
 
 
-import pymysql.cursors
+# import pymysql.cursors
 
 
-connection = pymysql.connect(host='localhost',
-                             user='root',
-                             password='',
-                             database='learning',
-                             cursorclass=pymysql.cursors.DictCursor)
+# connection = pymysql.connect(host='localhost',
+#                              user='root',
+#                              password='',
+#                              database='learning',
+#                              cursorclass=pymysql.cursors.DictCursor)
 
 
-with connection:
-    with connection.cursor() as cursor:
-        sql = "INSERT INTO`staff` (`id`, `name`,`age`,`grade`) VALUES (%s,%s,%s,%s)"
-        cursor.execute(sql, ('05', 'rani',24,'A'))
-        connection.commit()
+# with connection:
+#     with connection.cursor() as cursor:
+#         sql = "INSERT INTO`staff` (`id`, `name`,`age`,`grade`) VALUES (%s,%s,%s,%s)"
+#         cursor.execute(sql, ('05', 'rani',24,'A'))
+#         connection.commit()
